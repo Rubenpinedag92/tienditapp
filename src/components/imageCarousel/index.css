@@ -1,0 +1,23 @@
+.backgroundImage {
+	object-fit: cover;
+	border-radius: md;
+}
+
+
+.slideCarousel {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	size: sm;
+	background-color: unset;
+	color: grey;
+}
+
+.slideLeft {
+	left: 10px;
+
+}
+
+.slideRight {
+	right: 10px;
+}
