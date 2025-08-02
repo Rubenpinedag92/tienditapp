@@ -6,3 +6,10 @@ export type Article = {
 	text: string,
 	title: string
 }
+export type Product = {
+	title: string,
+	desc: string,
+	sale: boolean,
+	price: number,
+	discountedPrice: number
+}

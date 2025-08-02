@@ -3,7 +3,8 @@ import Header from "./header"
 import "./index.css"
 import { ImageCarousel } from "../../components/imageCarousel/index.tsx"
 import ArticleStack from "../../components/article-stack/index.tsx"
-import type { Article } from "../../models/types.ts"
+import type { Article, Product } from "../../models/types.ts"
+import ProductCardList from "../../components/product-card-list/index.tsx"
 
 export default function Home() {
 	const articles: Article[] = [{
@@ -18,6 +19,16 @@ export default function Home() {
 		imageUrl: "articulo2.jpg",
 		url: ""
 	}]
+
+	const products: Product[] = [{
+		desc: "Pack de seis estantes flotantes para libros. Diseñados...",
+		title: "Juego de 6 - Estante para libros Alysa 60 cm",
+		price: 219,
+		discountedPrice: 199,
+		sale: true
+	}]
+
+
 	return (<Flex width={'100%'} direction={"column"} alignItems="center">
 		<Header></Header>
 		<ImageCarousel images={["repisa1.jpg", "repisa2.jpg"]}></ImageCarousel>
@@ -25,7 +36,9 @@ export default function Home() {
 		<Box width={'90vw'} >
 			<ArticleStack articles={articles}></ArticleStack>
 		</Box>
-
+		<Flex>
+			<ProductCardList products={products}></ProductCardList>
+		</Flex>
 	</Flex>)
 
 }
