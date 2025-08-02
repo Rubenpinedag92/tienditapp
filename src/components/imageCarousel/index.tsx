@@ -16,7 +16,7 @@ interface ImageCarouselProps {
 
 export const ImageCarousel = ({
 	images,
-	height = '70vh',
+	height = '50vh',
 	width = '100%'
 }: ImageCarouselProps) => {
 	const [currentIndex, setCurrentIndex] = useState(0);
