@@ -10,6 +10,7 @@ export type Product = {
 	title: string,
 	desc: string,
 	sale: boolean,
-	price: number,
-	discountedPrice: number
+	price: string,
+	discountedPrice: string,
+	imageUrl: string
 }

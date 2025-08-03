@@ -18,11 +18,11 @@ export default function ArticleStack(props: ArticleStackProps) {
 							<Text fontSize={"large"}>{a.text}</Text>
 							<Button variant={"surface"} colorPalette={"yellow"} rounded={"none"} padding={"7"} width={"fit"} >Ver {a.title}</Button>
 						</Stack>
-						<Image width={'100%'} height={'auto'} src={a.imageUrl}></Image>
+						<Image width={'xl'} height={'auto'} src={a.imageUrl}></Image>
 					</HStack>
 				} else {
 					return <HStack paddingTop={"3vh"}>
-						<Image src={a.imageUrl} width={"100%"} height={"auto"}></Image>
+						<Image src={a.imageUrl} width={"xl"} height={"auto"}></Image>
 						<Stack paddingLeft={"20"}>
 							<Text fontSize={'5xl'}>{a.title}</Text>
 							<Text fontSize={"large"}>{a.text}</Text>
