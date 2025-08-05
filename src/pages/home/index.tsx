@@ -63,7 +63,7 @@ export default function Home() {
 		<Box width={'65vw'} justifyContent={"center"}>
 			<ArticleStack articles={articles}></ArticleStack>
 		</Box>
-		<Flex paddingTop={"10vh"} width={"80vw"}>
+		<Flex paddingY={"10vh"} paddingTop={"10vh"} width={"80vw"}>
 			<Stack>
 				<Text fontWeight={"normal"} fontSize={"5xl"}>Nuestros Basicos</Text>
 				<ProductCardList products={products}></ProductCardList>
@@ -71,7 +71,7 @@ export default function Home() {
 			<Stack width={"25vw"} padding={"7"} borderTopRightRadius={"130px"} bgImage="linear-gradient(to bottom, #f1be48 60%, white 50%)">
 				<Text paddingBottom={"20px"} color={"white"} fontSize={"3xl"} fontWeight={"lighter"} width={"30%"}>BLOG</Text>
 				<Text paddingBottom={"20px"} fontWeight={"semibold"} fontSize={"5xl"} maxW={"80%"} lineHeight={"1"}>Cómo Elegir Estantes Flotantes para tu Hogar – Guía de Estilo y Función</Text>
-				<Button variant={"solid"} color={"yellow.500"} width={"33%"}> Leer articulo blog</Button>
+				<Button variant={"solid"} width={"33%"}> Leer articulo blog</Button>
 				<Image paddingTop={"50px"} src="blog1.jpg" width={"sm"}></Image>
 			</Stack>
 		</Flex>
@@ -85,7 +85,7 @@ export default function Home() {
 			<Text fontSize={"xl"} fontWeight={"normal"} color={"gray.400"}>Recibe descuentos exclusivos y novedades antes que nadie.</Text>
 			<HStack gap={"0"} paddingTop={"5"} width={"28vw"}>
 				<Input height={"45px"} borderRadius={"none"} bgColor={"white"} placeholder="Escribe aqui tu email" _placeholder={{ color: "yellow.500", fontSize: "xl", fontWeight: "normal" }} borderBottomColor={"yellow.500"} />
-				<Button borderRadius={"none"} bgColor={"yellow.500"} height={"45px"}>Inscribirse</Button>
+				<Button borderRadius={"none"} height={"45px"}>Inscribirse</Button>
 			</HStack>
 		</Stack>
 		<HomeFooter></HomeFooter>

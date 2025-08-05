@@ -1,4 +1,4 @@
-import { Box, Button, Card, Flex, HStack, Image, Spacer, Stack, Text } from "@chakra-ui/react"
+import { Button, Card, Flex, Image, Spacer, Stack, Text } from "@chakra-ui/react"
 import type { Product } from "../../models/types"
 
 type ProductCardListProps = {
@@ -9,7 +9,7 @@ export default function ProductCardList(props: ProductCardListProps) {
 	const { products } = props;
 	return <Flex wrap={"wrap"} maxW={"50vw"} gap={"7"}>
 		{
-			products.map(p => <Card.Root padding={"3"} maxW={"sm"} border={"none"}>
+			products.map(p => <Card.Root padding={"3"} maxW={"sm"} border={"none"} variant={"elevated"} bgColor={"transparent"} >
 				<Image src={p.imageUrl} height={"sm"} />
 				<Flex>
 					<Text fontWeight={"normal"}>{p.title}</Text>
@@ -23,9 +23,11 @@ export default function ProductCardList(props: ProductCardListProps) {
 				<Text paddingTop={"3"} fontWeight={"light"} color={"gray.500"} fontSize={"sm"}>
 					{p.desc}
 				</Text>
-				<Button backgroundColor={"yellow.400"} colorPalette={"yellow"} variant={"solid"}>Ver mas.</Button>
+				<Button colorPalette={"yellow"} variant={"solid"}>Ver mas.</Button>
 
 			</Card.Root>)
 		}
 	</Flex>
 }
+
+

@@ -16,7 +16,7 @@ export default function ArticleStack(props: ArticleStackProps) {
 						<Stack paddingRight={"20"}>
 							<Text fontSize={'5xl'}>{a.title}</Text>
 							<Text fontSize={"large"}>{a.text}</Text>
-							<Button variant={"surface"} colorPalette={"yellow"} rounded={"none"} padding={"7"} width={"fit"} >Ver {a.title}</Button>
+							<Button variant={"surface"} rounded={"none"} padding={"7"} width={"fit"} >Ver {a.title}</Button>
 						</Stack>
 						<Image width={'xl'} height={'auto'} src={a.imageUrl}></Image>
 					</HStack>
@@ -26,7 +26,7 @@ export default function ArticleStack(props: ArticleStackProps) {
 						<Stack paddingLeft={"20"}>
 							<Text fontSize={'5xl'}>{a.title}</Text>
 							<Text fontSize={"large"}>{a.text}</Text>
-							<Button variant={"surface"} colorPalette={"yellow"} rounded={"none"} padding={"7"} width={"fit"}>Ver {a.title}</Button>
+							<Button variant={"surface"} rounded={"none"} padding={"7"} width={"fit"}>Ver {a.title}</Button>
 						</Stack>
 
 					</HStack>
