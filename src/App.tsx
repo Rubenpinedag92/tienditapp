@@ -1,16 +1,20 @@
-import { useState } from 'react'
 import './App.css'
-import Home from './pages/home'
 import { Provider } from './components/ui/provider'
-import { LightMode } from './components/ui/color-mode'
+import { createBrowserRouter, RouterProvider } from 'react-router'
+import Login from './pages/login'
 
 function App() {
+	const router = createBrowserRouter([
+		{
+			path: "/", Component: Login
+		}
+	])
 
 	return (
 		<Provider>
-			<LightMode>
-				<Home></Home>
-			</LightMode>
+			<RouterProvider router={router}>
+
+			</RouterProvider>
 		</Provider>
 	)
 }

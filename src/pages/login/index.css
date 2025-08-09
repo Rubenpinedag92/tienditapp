@@ -1,0 +1,5 @@
+.backgroundGradient {
+	background-image:
+		radial-gradient(circle at right, #5d627442 0%, transparent 80%),
+		radial-gradient(circle at left, #161d1b66 0%, transparent 80%)
+}
